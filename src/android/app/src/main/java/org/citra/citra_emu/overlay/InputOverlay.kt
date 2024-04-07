@@ -437,6 +437,18 @@ class InputOverlay(context: Context?, attrs: AttributeSet?) : SurfaceView(contex
                 )
             )
         }
+        //swap screens button, false means not displayed by default?
+        if (preferences.getBoolean("buttonToggle14", false)) {
+            overlayButtons.add(
+                initializeOverlayButton(
+                    context, //idk what context is
+                    R.drawable.button_swap, //add swap pics
+                    R.drawable.button_swap_pressed,
+                    NativeLibrary.ButtonType.BUTTON_SWAP, //need to lookup NativeLibrary
+                    orientation //already set
+                )
+            )
+        }
     }
 
     fun refreshControls() {
