@@ -712,6 +712,9 @@ object NativeLibrary {
         const val DPAD = 780
         const val BUTTON_DEBUG = 781
         const val BUTTON_GPIO14 = 782
+        //idk about numbering scheme
+        //so added next available number
+        const val BUTTON_SWAP = 783 
     }
 
     /**
