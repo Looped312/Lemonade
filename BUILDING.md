@@ -35,15 +35,15 @@ On Windows, all library dependencies are automatically included within the "exte
 
 ### Building
 
-1 -Open the CMake GUI application and point it to the Lemonade folder you previosly cloned.
+1 - Open the CMake GUI application and point it to the Lemonade folder you previously cloned.
 
-2 -For the build directory, use a build/ subdirectory inside the source directory or some other directory of your choice. (Tell CMake to create it.)
+2 - For the build directory, use a build/ subdirectory inside the source directory or some other directory of your choice. (Tell CMake to create it.)
 
 3 - Click the "Configure" button and choose Visual Studio 17 2022, with x64 for the optional platform.
 
 **NOTE: If you get errors like "XXX does not contain a CMakeLists.txt file" at this step, it means you didn't use the `--recursive` flag in the clone step, or you used tools other than the git CLI. Please run "git submodule update --init --recursive" to get remaining dependencies.**
 
-4 -Click "Generate" to create the project files.
+4 - Click "Generate" to create the project files.
 
 5 - Open the solution file lemoande.sln in Visual Studio 2022, which is located in the build folder.
 
@@ -57,7 +57,7 @@ On Windows, all library dependencies are automatically included within the "exte
 
 # Building for Linux
 
-## You'll need to download and install the following to build Lemoande on Linux:
+## You'll need to download and install the following to build Lemonade on Linux:
 
     SDL2
         Deb: sudo apt install libsdl2-dev
@@ -142,7 +142,7 @@ On Windows, all library dependencies are automatically included within the "exte
 
     Note on Boost library: you don't need to install Boost library on your system, because Lemonade provides a bundled trimmed Boost library. However, if you already have Boost library installed on your system, please make sure its version is at least 1.66 (which contains a bug fix for GCC 7), otherwise compilation would fail.
 
-### Building Lemoande in Debug Mode (Slow):
+### Building Lemonade in Debug Mode (Slow):
 
 ### Using gcc:
 ```
@@ -171,7 +171,7 @@ sudo make install (optional)
 
 **If you get a weird compile error related to std::span conversions, make sure you are using clang and libc++ 15 or up. This is an issue with libc++ 14.**
 
-### Building Lemoande in Release Mode (Optimized):
+### Building Lemonade in Release Mode (Optimized):
 
 ```
 mkdir build
